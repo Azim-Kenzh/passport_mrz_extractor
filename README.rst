@@ -59,7 +59,7 @@ This example demonstrates extracting all available MRZ fields from an image and 
     image_path = 'path/to/passport_image.jpg'
 
     try:
-        mrz_data = passport_mrz_extractor.read_mrz(image_path)
+        mrz_data = mrz_reader.read_mrz(image_path)
         print("Extracted MRZ Data:")
         for key, value in mrz_data.items():
             print(f"{key}: {value}")
