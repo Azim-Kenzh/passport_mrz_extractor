@@ -53,13 +53,13 @@ This example demonstrates extracting all available MRZ fields from an image and 
 
 .. code-block:: python
 
-    from passport_mrz_extractor import mrz_reader
+    from passport_mrz_extractor import read_mrz
 
     # Path to the passport image
     image_path = 'path/to/passport_image.jpg'
 
     try:
-        mrz_data = mrz_reader.read_mrz(image_path)
+        mrz_data = read_mrz(image_path)
         print("Extracted MRZ Data:")
         for key, value in mrz_data.items():
             print(f"{key}: {value}")
@@ -72,7 +72,7 @@ In this example, we extract specific fields such as the country, document number
 
 .. code-block:: python
 
-    from passport_mrz_extractor import mrz_reader
+    from passport_mrz_extractor import read_mrz
 
     # Path to the passport image
     image_path = 'path/to/passport_image.jpg'
