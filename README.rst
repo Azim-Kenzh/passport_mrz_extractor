@@ -72,14 +72,14 @@ In this example, we extract specific fields such as the country, document number
 
 .. code-block:: python
 
-    import passport_mrz_extractor
+    import mrz_reader
 
     # Path to the passport image
     image_path = 'path/to/passport_image.jpg'
 
     try:
         # Extract MRZ data
-        mrz_data = passport_mrz_extractor.read_mrz(image_path)
+        mrz_data = mrz_reader.read_mrz(image_path)
 
         # Display specific fields
         print("Country of Issue:", mrz_data.get("country"))
