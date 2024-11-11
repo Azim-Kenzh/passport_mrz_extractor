@@ -10,7 +10,7 @@ setup(
     author_email='azimkozho.inventor@gmail.com',
     url='https://github.com/Azim-Kenzh/passport_mrz_extractor',
     license='MIT',  # License type
-    packages=find_packages(),
+    packages=['passport_mrz_extractor'],
     install_requires=[
         'Pillow',
         'pytesseract',
