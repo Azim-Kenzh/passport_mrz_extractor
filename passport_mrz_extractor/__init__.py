@@ -1,3 +1,3 @@
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
-from passport_mrz_extractor.mrz_reader import *
+from .mrz_reader import read_mrz
